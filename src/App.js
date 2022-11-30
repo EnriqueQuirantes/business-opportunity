@@ -15,7 +15,7 @@ function App() {
        <Menu/>
 
       <div>
-        lorem ipsum
+        lorem ipsum dolor est
       </div>
     </div>
   
