@@ -15,7 +15,7 @@ function Login(){
     const handleSubmit = (e) => {
         //prevent default behaviour of the form
         e.preventDefault();
-        fetch('http://localhost:8080/login',
+        fetch('http://localhost:8080/api/login',
         {
         //POST request
           method: 'POST',
@@ -24,8 +24,15 @@ function Login(){
             password:passwordRef.current.value,
   
           }),
+          headers:{
+            "Content-Type": "application/json",
+          }
+        }).then(response=> {
+            return response.json()
+        }).then(data =>{
+            if (data ===true)  navigate('/main')
         })
-        navigate('/patata')
+      
 
      
     }
@@ -46,7 +53,7 @@ function Login(){
                 type="password"
                ref={passwordRef}
             /></label>
-
+                
                 <input onClick = {handleSubmit} type="submit"/>
 
            
