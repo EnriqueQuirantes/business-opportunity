@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
        <Menu/>
-
-      <div>
+{/*just a placeholder div for testing selenium*/}
+      <div id="placeholder">
         lorem ipsum dolor est
       </div>
     </div>
