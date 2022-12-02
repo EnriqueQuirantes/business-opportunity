@@ -42,19 +42,19 @@ function Login(){
             
             
             <label>Username
-            <input
+            <input id="user"
                 placeholder="Username"  
                 type="text"
                 ref={usernameRef}
             /> </label>
              <label >Password
-            <input
+            <input id ="password"
                 placeholder="Password"
                 type="password"
                ref={passwordRef}
             /></label>
                 
-                <input onClick = {handleSubmit} type="submit"/>
+                <input id="submit" onClick = {handleSubmit} type="submit"/>
 
            
         </form>
